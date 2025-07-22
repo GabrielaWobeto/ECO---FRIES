@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Coleta Seletiva</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Robinweatherall-Recycling-Recycle.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>ECO FRIES - DO LIXO À SOLUÇÃO</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="jogo.html">Jogo da Coleta Seletiva</a>
+            <a href="quiz.html">Quiz Ambiental</a>
+            <a href="sobre.html">Sobre o Projeto</a>
+            <a href="coletaseletiva.html">O que é Coleta Seletiva</a>
+            <a href="recursos.html">Recursos Educacionais</a>
+            <a href="roteiro.html">Roteiro da Coleta Seletiva</a>
+        </nav>
+    </header>
+    <main>
+        <section class="jogo">
+            <h2>Jogo da Coleta Seletiva</h2>
+            <p>Arraste cada tipo de lixo para a lixeira correta! Cada lixeira tem uma cor:</p>
+            <ul>
+                <li><span class="azul">Azul</span>: Papel</li>
+                <li><span class="vermelho">Vermelha</span>: Plástico</li>
+                <li><span class="amarelo">Amarela</span>: Metal</li>
+                <li><span class="verde">Verde</span>: Vidro</li>
+                <li><span class="preto">Preta</span>: Rejeitos</li>
+                <li><span class="marrom">Marrom</span>: Orgânico</li>
+            </ul>
+            <div id="game-container">
+                <div id="trash-items"></div>
+                <div id="bins">
+                    <div class="bin azul" data-type="papel">Papel</div>
+                    <div class="bin vermelho" data-type="plastico">Plástico</div>
+                    <div class="bin amarelo" data-type="metal">Metal</div>
+                    <div class="bin verde" data-type="vidro">Vidro</div>
+                    <div class="bin preto" data-type="rejeito">Rejeito</div>
+                    <div class="bin marrom" data-type="organico">Orgânico</div>
+                </div>
+            </div>
+            <div id="game-result"></div>
+            <button id="restart-game">Reiniciar Jogo</button>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <span>Responsáveis: Prof. João Silva, Maria Oliveira</span>
+        </div>
+    </footer>
+    <script src="jogo.js"></script>
+</body>
+</html>
